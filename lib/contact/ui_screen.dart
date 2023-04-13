@@ -154,10 +154,10 @@ class _Contact_UIState extends State<Contact_UI> {
             mainAxisSize: MainAxisSize.min,
             children: [
               TextField(controller: txtName,decoration: InputDecoration(
-                labelText: "${cm.name}",
+                labelText: "${contactList[i].name}",
               ),),
               TextField(controller: txtContact,decoration: InputDecoration(
-                labelText: "${cm.mobile}",
+                labelText: "${contactList[i].mobile}",
               ),),
               SizedBox(height: 10),
               ElevatedButton(onPressed: () {

@@ -113,19 +113,6 @@ class _Home_ScreenState extends State<Home_Screen> {
               },);
              },child: Icon(Icons.add),
            ),
-           // bottomNavigationBar: BottomNavigationBar(
-           //   onTap: (value) {
-           //     Navigator.pushNamed(context, 'fav');
-           //   },
-           //   items: [
-           //     BottomNavigationBarItem(label: "",icon: Icon(Icons.star,color: Colors.grey.shade300)),
-           //     BottomNavigationBarItem(label: "",icon: Icon(Icons.access_time,color: Colors.grey.shade300)),
-           //     BottomNavigationBarItem(label: "",icon: Icon(Icons.person,color: Colors.grey.shade300)),
-           //     BottomNavigationBarItem(label: "",icon: Icon(Icons.apps,color: Colors.grey.shade300)),
-           //     BottomNavigationBarItem(label: "",icon: Icon(Icons.keyboard_voice_outlined,color: Colors.grey.shade300)),
-           //   ],
-           // ),
-
           ),
         ),
     );
@@ -145,44 +132,9 @@ class _Home_ScreenState extends State<Home_Screen> {
           onTap: () {
             Navigator.pushNamed(context, 'ui',arguments: index).then((value) {
               setState(() {
-
               });
             },);
           },
-          // shape: RoundedRectangleBorder(
-          //   borderRadius: BorderRadius.circular(10)
-          // ),
-            // Row(
-            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //   children: [
-            //     IconButton(onPressed: (){
-            //         setState(() {
-            //           contactList.removeAt(index);
-            //         });
-            //     }, icon: Icon(Icons.delete),color: Colors.blue),
-            //     IconButton(onPressed: ()  {
-            //       txtName=TextEditingController(text: cm.name);
-            //       txtContact=TextEditingController(text: cm.mobile);
-            //
-            //       updetDialog(index);
-            //     }, icon: Icon(Icons.edit),color: Colors.blue),
-            //     IconButton(onPressed: ()  {
-            //         setState(() {
-            //           Navigator.pushNamed(context, 'ui',arguments:[contactList,index]);
-            //         });
-            //       // String link="tel:${contactList[index].mobile}";
-            //       // await launchUrl(Uri.parse(link));
-            //     }, icon: Icon(Icons.call),color: Colors.blue),
-            //     IconButton(onPressed: (){
-            //       Share.share("${contactList[index].name}");
-            //     }, icon: Icon(Icons.share),color: Colors.blue),
-            //     IconButton(onPressed: () async {
-            //       String link="sms:${contactList[index].mobile}?body=Thank You";
-            //       await launchUrl(Uri.parse(link));
-            //     }, icon: Icon(Icons.message),color: Colors.blue),
-            //   ],
-            // )
-
         ),
       ),
     );
